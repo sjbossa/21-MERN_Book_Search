@@ -22,7 +22,7 @@ class AuthService {
       if (decoded.exp < Date.now() / 1000) {
         return true;
       } else return false;
-    } catch (err) {
+    } catch (error) {
       return false;
     }
   }
@@ -46,4 +46,4 @@ class AuthService {
   }
 }
 
-export default new AuthService();
+export default AuthService();
